@@ -41,6 +41,16 @@ class User{
       type: 'post'
     })
   }
+  // 
+  getUserList(pageNum) {
+    return _mm.request({
+      type: 'post',
+      url: '/manage/user/list.do',
+      data: {
+        pageNum
+      }
+    })
+  }
 }
 
 export default User
