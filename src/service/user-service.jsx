@@ -41,7 +41,7 @@ class User{
       type: 'post'
     })
   }
-  // 
+  // 获取用户列表
   getUserList(pageNum) {
     return _mm.request({
       type: 'post',
