@@ -37,7 +37,7 @@ class User{
   // 退出登录
   logout() {
     return _mm.request({
-      url: 'user/logout.do',
+      url: '/user/logout.do',
       type: 'post'
     })
   }
